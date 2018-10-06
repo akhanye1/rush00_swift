@@ -24,9 +24,18 @@ class TopicView: UIViewController,UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return topicData.count
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "topicCell") as! TopicCell
+        cell.textLabel?.text = topicData[indexPath.row].topic
+        cell.detailTextLabel?.text = topicData[indexPath.row].date
+        cell.detailTextLabel?.text = topicData[indexPath.row].author
+        cell.detailTextLabel?.text = topicData[indexPath.row].id
+        print("Text : \(topicData[indexPath.row].topic)")
+        return cell
+    }
     
 
     /*

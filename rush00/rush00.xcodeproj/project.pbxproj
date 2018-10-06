@@ -16,6 +16,10 @@
 		CA75C47B2168C09800517267 /* TopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75C47A2168C09800517267 /* TopicView.swift */; };
 		CA75C47E2168D8EA00517267 /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75C47C2168D8EA00517267 /* TopicCell.swift */; };
 		CA75C47F2168D8EA00517267 /* TopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA75C47D2168D8EA00517267 /* TopicCell.xib */; };
+		CA75C4822168D98F00517267 /* Topics.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75C4802168D98F00517267 /* Topics.swift */; };
+		CA75C4832168D98F00517267 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75C4812168D98F00517267 /* Message.swift */; };
+		CA75C4862168D9B200517267 /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75C4842168D9B200517267 /* MessageController.swift */; };
+		CA75C4872168D9B200517267 /* TopicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75C4852168D9B200517267 /* TopicController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		CA75C47A2168C09800517267 /* TopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicView.swift; sourceTree = "<group>"; };
 		CA75C47C2168D8EA00517267 /* TopicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		CA75C47D2168D8EA00517267 /* TopicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicCell.xib; sourceTree = "<group>"; };
+		CA75C4802168D98F00517267 /* Topics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Topics.swift; sourceTree = "<group>"; };
+		CA75C4812168D98F00517267 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		CA75C4842168D9B200517267 /* MessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		CA75C4852168D9B200517267 /* TopicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,8 @@
 		BC4D1DC92168B620000CBA9D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CA75C4812168D98F00517267 /* Message.swift */,
+				CA75C4802168D98F00517267 /* Topics.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -85,6 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				BC4D1DCC2168C3D7000CBA9D /* Connection.swift */,
+				CA75C4842168D9B200517267 /* MessageController.swift */,
+				CA75C4852168D9B200517267 /* TopicController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -175,8 +187,12 @@
 				BC4D1DBA2168B3CE000CBA9D /* ViewController.swift in Sources */,
 				CA75C47E2168D8EA00517267 /* TopicCell.swift in Sources */,
 				BC4D1DCD2168C3D7000CBA9D /* Connection.swift in Sources */,
+				CA75C4862168D9B200517267 /* MessageController.swift in Sources */,
+				CA75C4872168D9B200517267 /* TopicController.swift in Sources */,
+				CA75C4822168D98F00517267 /* Topics.swift in Sources */,
 				BC4D1DB82168B3CE000CBA9D /* AppDelegate.swift in Sources */,
 				CA75C47B2168C09800517267 /* TopicView.swift in Sources */,
+				CA75C4832168D98F00517267 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
