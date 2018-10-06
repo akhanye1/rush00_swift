@@ -1,11 +1,9 @@
 
-import Foundation
-
 class Topic {
-    var id: String?
-    var topic: String?
-    var date: String?
-    var author: String?
+    var id: String
+    var topic: String
+    var date: String
+    var author: String
 
     init(id: String, topic: String, date: String, author: String) {
         self.id = id

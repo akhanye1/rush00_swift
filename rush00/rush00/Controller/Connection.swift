@@ -11,5 +11,3 @@ import Foundation
 func connectTo42() {
     
 }
-
-connectTo42()
