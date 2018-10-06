@@ -23,6 +23,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="174" y="29"/>
         </scene>
         <!--Topics-->
         <scene sceneID="eQ5-Ic-SgE">
@@ -47,6 +48,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="W2o-t6-0bc" id="sJx-te-0Gi"/>
+                                    <outlet property="delegate" destination="W2o-t6-0bc" id="1tY-ov-bnU"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -62,6 +64,10 @@
                     <navigationItem key="navigationItem" title="Topics" id="DrO-ol-9kP">
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="quJ-WK-q7k"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="logout" destination="quJ-WK-q7k" id="vyu-ro-k7V"/>
+                        <outlet property="tableView" destination="qCc-S7-Ws9" id="Xg7-Fe-5jt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rDb-YK-i3X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

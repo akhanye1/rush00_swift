@@ -8,8 +8,10 @@
 
 import UIKit
 
-class TopicView: UIViewController {
+class TopicView: UIViewController,UITableViewDataSource,UITableViewDelegate{
 
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var logout: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,6 +22,11 @@ class TopicView: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
     
 
     /*
