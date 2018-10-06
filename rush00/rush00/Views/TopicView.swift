@@ -12,6 +12,7 @@ class TopicView: UIViewController,UITableViewDataSource,UITableViewDelegate{
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var logout: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

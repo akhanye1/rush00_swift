@@ -94,6 +94,10 @@
 		BC4D1DCA2168B63E000CBA9D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DAEB9BBC2168D76F00CCBBB0 /* main.swift */,
+				DAEB9BBA2168D76F00CCBBB0 /* MessageController.swift */,
+				DAEB9BBB2168D76F00CCBBB0 /* script.sh */,
+				DAEB9BBD2168D76F00CCBBB0 /* TopicController.swift */,
 				BC4D1DCC2168C3D7000CBA9D /* Connection.swift */,
 				CA75C4842168D9B200517267 /* MessageController.swift */,
 				CA75C4852168D9B200517267 /* TopicController.swift */,
@@ -174,6 +178,7 @@
 				CA75C47F2168D8EA00517267 /* TopicCell.xib in Resources */,
 				BC4D1DBF2168B3D1000CBA9D /* Assets.xcassets in Resources */,
 				BC4D1DBD2168B3CE000CBA9D /* Main.storyboard in Resources */,
+				DAEB9BBF2168D76F00CCBBB0 /* script.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
