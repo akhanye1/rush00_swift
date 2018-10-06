@@ -1,1 +1,1 @@
-swiftc ../Model/Topics.swift ../Model/Message.swift TopicController.swift MessageController.swift main.swift
+swiftc ../Model/Topics.swift ../Model/Message.swift TopicController.swift MessageController.swift Connection.swift main.swift

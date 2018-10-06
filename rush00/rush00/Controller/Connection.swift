@@ -9,5 +9,5 @@
 import Foundation
 
 func connectTo42() {
-    
+    print("Connecting....")    
 }
