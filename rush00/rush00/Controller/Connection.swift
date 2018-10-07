@@ -21,7 +21,7 @@ func getTopics(deligateType: UIDeligate) {
 
     let url = URL(string: authEndPoint)
     var request = URLRequest(url: url!)
-    request.setValue("Bearer 6d09c621936fcf6f591b16bc10f80b6bb48f243e0222783bedfbfd200fa87b85", forHTTPHeaderField: "Authorization")
+    request.setValue("Bearer 3504fa94bbd9f3e6c4a2062d92b86d6b1ae344f35a29f696a7c14da9ec57b152", forHTTPHeaderField: "Authorization")
     request.httpMethod = "GET"
     let session = URLSession.shared
     let requestPost = session.dataTask(with: request) { (data, response, error) in
@@ -73,7 +73,7 @@ func getMessages(deligateType: UIDeligate) {
 
     let url = URL(string: authEndPoint)
     var request = URLRequest(url: url!)
-    request.setValue("Bearer 6d09c621936fcf6f591b16bc10f80b6bb48f243e0222783bedfbfd200fa87b85", forHTTPHeaderField: "Authorization")
+    request.setValue("Bearer 3504fa94bbd9f3e6c4a2062d92b86d6b1ae344f35a29f696a7c14da9ec57b152", forHTTPHeaderField: "Authorization")
     request.httpMethod = "GET"
     let session = URLSession.shared
     let requestPost = session.dataTask(with: request) { (data, response, error) in

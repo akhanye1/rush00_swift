@@ -44,9 +44,16 @@ class TopicView: UIViewController,UITableViewDataSource,UITableViewDelegate, UID
         cell.detailTextLabel?.text = topicData[indexPath.row].date
         cell.detailTextLabel?.text = topicData[indexPath.row].author
         cell.detailTextLabel?.text = topicData[indexPath.row].id
+        cell.rowVal = topicData[indexPath.row].id
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let messageCell = segue.destination as? MessageViewController else { return }
+        let cell = sender as! TopicCell
+        messageCell.topicId = cell.rowVal!
+        print("Row value is : ", messageCell.topicId!)
+    }
 
     /*
     // MARK: - Navigation

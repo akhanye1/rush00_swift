@@ -15,6 +15,8 @@ class MessageViewController: UIViewController, UITableViewDelegate, UITableViewD
         return messageData.count
     }
     
+    var topicId: String!
+    
     func updateMessages(messages: [Message]) {
         messageData = messages
         tableView.reloadData()

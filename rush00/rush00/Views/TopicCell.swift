@@ -21,4 +21,6 @@ class TopicCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    var rowVal: String? = ""
+    
 }
