@@ -22,6 +22,8 @@
 		CA75C4862168D9B200517267 /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75C4842168D9B200517267 /* MessageController.swift */; };
 		CA75C4872168D9B200517267 /* TopicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75C4852168D9B200517267 /* TopicController.swift */; };
 		DA191347216984CD00F6256B /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA191346216984CD00F6256B /* MessageViewController.swift */; };
+		DA44029B216A21A0007D27CB /* addTopicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44029A216A21A0007D27CB /* addTopicViewController.swift */; };
+		DA44029D216A21F8007D27CB /* addMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA44029C216A21F8007D27CB /* addMessageViewController.swift */; };
 		DAA8F666216942CD003D0B48 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA8F665216942CD003D0B48 /* MessageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +45,8 @@
 		CA75C4842168D9B200517267 /* MessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
 		CA75C4852168D9B200517267 /* TopicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicController.swift; sourceTree = "<group>"; };
 		DA191346216984CD00F6256B /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		DA44029A216A21A0007D27CB /* addTopicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addTopicViewController.swift; sourceTree = "<group>"; };
+		DA44029C216A21F8007D27CB /* addMessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addMessageViewController.swift; sourceTree = "<group>"; };
 		DAA8F665216942CD003D0B48 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +121,8 @@
 				DAA8F665216942CD003D0B48 /* MessageTableViewCell.swift */,
 				DA191346216984CD00F6256B /* MessageViewController.swift */,
 				BC775A3F2169AF7400D05B6A /* UIDeligate.swift */,
+				DA44029A216A21A0007D27CB /* addTopicViewController.swift */,
+				DA44029C216A21F8007D27CB /* addMessageViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA44029B216A21A0007D27CB /* addTopicViewController.swift in Sources */,
 				BC4D1DBA2168B3CE000CBA9D /* ViewController.swift in Sources */,
 				CA75C47E2168D8EA00517267 /* TopicCell.swift in Sources */,
 				BC4D1DCD2168C3D7000CBA9D /* Connection.swift in Sources */,
@@ -205,6 +212,7 @@
 				DA191347216984CD00F6256B /* MessageViewController.swift in Sources */,
 				BC4D1DB82168B3CE000CBA9D /* AppDelegate.swift in Sources */,
 				CA75C47B2168C09800517267 /* TopicView.swift in Sources */,
+				DA44029D216A21F8007D27CB /* addMessageViewController.swift in Sources */,
 				CA75C4832168D98F00517267 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
