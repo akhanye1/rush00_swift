@@ -13,6 +13,8 @@ class TopicView: UIViewController,UITableViewDataSource,UITableViewDelegate, UID
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var logout: UIBarButtonItem!
     
+    var passedData: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getTopics(deligateType: self)
@@ -40,10 +42,13 @@ class TopicView: UIViewController,UITableViewDataSource,UITableViewDelegate, UID
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "topicCell") as! TopicCell
-        cell.textLabel?.text = topicData[indexPath.row].topic
+        /*cell.textLabel?.text = topicData[indexPath.row].topic
         cell.detailTextLabel?.text = topicData[indexPath.row].date
         cell.detailTextLabel?.text = topicData[indexPath.row].author
-        cell.detailTextLabel?.text = topicData[indexPath.row].id
+        cell.detailTextLabel?.text = topicData[indexPath.row].id*/
+        cell.topicLabel?.text = topicData[indexPath.row].topic
+        cell.authorLabel?.text = topicData[indexPath.row].author
+        cell.dateLabel?.text = topicData[indexPath.row].date
         cell.rowVal = topicData[indexPath.row].id
         return cell
     }
@@ -54,6 +59,9 @@ class TopicView: UIViewController,UITableViewDataSource,UITableViewDelegate, UID
         messageCell.topicId = cell.rowVal!
         print("Row value is : ", messageCell.topicId!)
     }
+    
+    @IBAction func unwindToTopic(_ sender: UIStoryboardSegue){}
+    
 
     /*
     // MARK: - Navigation

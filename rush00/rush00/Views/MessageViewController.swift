@@ -48,6 +48,7 @@ class MessageViewController: UIViewController, UITableViewDelegate, UITableViewD
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func unwindToMessage(_ sender: UIStoryboardSegue){}
 
     /*
     // MARK: - Navigation
