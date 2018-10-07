@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController{
+    
     @IBOutlet weak var Username: UILabel!
     @IBOutlet weak var Password: UILabel!
     
