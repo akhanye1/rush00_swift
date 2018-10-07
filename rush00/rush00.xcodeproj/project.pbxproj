@@ -20,6 +20,8 @@
 		CA75C4832168D98F00517267 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75C4812168D98F00517267 /* Message.swift */; };
 		CA75C4862168D9B200517267 /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75C4842168D9B200517267 /* MessageController.swift */; };
 		CA75C4872168D9B200517267 /* TopicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75C4852168D9B200517267 /* TopicController.swift */; };
+		DA191347216984CD00F6256B /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA191346216984CD00F6256B /* MessageViewController.swift */; };
+		DAA8F666216942CD003D0B48 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA8F665216942CD003D0B48 /* MessageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		CA75C4812168D98F00517267 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		CA75C4842168D9B200517267 /* MessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
 		CA75C4852168D9B200517267 /* TopicController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopicController.swift; sourceTree = "<group>"; };
+		DA191346216984CD00F6256B /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		DAA8F665216942CD003D0B48 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +98,6 @@
 		BC4D1DCA2168B63E000CBA9D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				DAEB9BBC2168D76F00CCBBB0 /* main.swift */,
-				DAEB9BBA2168D76F00CCBBB0 /* MessageController.swift */,
-				DAEB9BBB2168D76F00CCBBB0 /* script.sh */,
-				DAEB9BBD2168D76F00CCBBB0 /* TopicController.swift */,
 				BC4D1DCC2168C3D7000CBA9D /* Connection.swift */,
 				CA75C4842168D9B200517267 /* MessageController.swift */,
 				CA75C4852168D9B200517267 /* TopicController.swift */,
@@ -112,6 +112,8 @@
 				CA75C47D2168D8EA00517267 /* TopicCell.xib */,
 				BC4D1DB92168B3CE000CBA9D /* ViewController.swift */,
 				CA75C47A2168C09800517267 /* TopicView.swift */,
+				DAA8F665216942CD003D0B48 /* MessageTableViewCell.swift */,
+				DA191346216984CD00F6256B /* MessageViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,6 +150,7 @@
 				TargetAttributes = {
 					BC4D1DB32168B3CE000CBA9D = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -178,7 +181,6 @@
 				CA75C47F2168D8EA00517267 /* TopicCell.xib in Resources */,
 				BC4D1DBF2168B3D1000CBA9D /* Assets.xcassets in Resources */,
 				BC4D1DBD2168B3CE000CBA9D /* Main.storyboard in Resources */,
-				DAEB9BBF2168D76F00CCBBB0 /* script.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,9 +194,11 @@
 				BC4D1DBA2168B3CE000CBA9D /* ViewController.swift in Sources */,
 				CA75C47E2168D8EA00517267 /* TopicCell.swift in Sources */,
 				BC4D1DCD2168C3D7000CBA9D /* Connection.swift in Sources */,
+				DAA8F666216942CD003D0B48 /* MessageTableViewCell.swift in Sources */,
 				CA75C4862168D9B200517267 /* MessageController.swift in Sources */,
 				CA75C4872168D9B200517267 /* TopicController.swift in Sources */,
 				CA75C4822168D98F00517267 /* Topics.swift in Sources */,
+				DA191347216984CD00F6256B /* MessageViewController.swift in Sources */,
 				BC4D1DB82168B3CE000CBA9D /* AppDelegate.swift in Sources */,
 				CA75C47B2168C09800517267 /* TopicView.swift in Sources */,
 				CA75C4832168D98F00517267 /* Message.swift in Sources */,
@@ -341,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = rush00/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -349,6 +354,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = rush.rush00;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -358,6 +364,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = rush00/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
