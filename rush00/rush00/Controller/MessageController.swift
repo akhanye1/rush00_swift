@@ -1,5 +1,5 @@
 
-let messageData: [Message] = [
+var messageData: [Message] = [
     Message(id: "1", message: "1st Message", date: "1st date", author: "1st Author", topicId: "1st Topic",
         reply: false),
     Message(id: "2", message: "2nd Message", date: "2nd date", author: "2nd Author", topicId: "2nd Topic",
