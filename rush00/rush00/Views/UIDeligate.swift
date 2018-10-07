@@ -11,4 +11,5 @@ import Foundation
 protocol UIDeligate : class {
     func updateMessages(messages: [Message])
     func updateTopics(topics: [Topic])
+    func changeView(userKey: String)
 }

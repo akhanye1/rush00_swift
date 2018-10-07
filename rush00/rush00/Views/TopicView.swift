@@ -9,6 +9,8 @@
 import UIKit
 
 class TopicView: UIViewController,UITableViewDataSource,UITableViewDelegate, UIDeligate {
+    var apiAccess: String = ""
+    var userAccess: String = ""
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var logout: UIBarButtonItem!
@@ -29,6 +31,10 @@ class TopicView: UIViewController,UITableViewDataSource,UITableViewDelegate, UID
     func updateTopics(topics: [Topic]) {
         topicData = topics
         tableView.reloadData()
+    }
+    
+    func changeView(userKey: String) {
+        
     }
 
     override func didReceiveMemoryWarning() {

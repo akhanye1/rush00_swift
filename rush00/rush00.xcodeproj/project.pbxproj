@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC331718216A582800A825FA /* navClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC331717216A582800A825FA /* navClassViewController.swift */; };
 		BC4D1DB82168B3CE000CBA9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D1DB72168B3CE000CBA9D /* AppDelegate.swift */; };
 		BC4D1DBA2168B3CE000CBA9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D1DB92168B3CE000CBA9D /* ViewController.swift */; };
 		BC4D1DBD2168B3CE000CBA9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4D1DBB2168B3CE000CBA9D /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC331717216A582800A825FA /* navClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navClassViewController.swift; sourceTree = "<group>"; };
 		BC4D1DB42168B3CE000CBA9D /* rush00.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rush00.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC4D1DB72168B3CE000CBA9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BC4D1DB92168B3CE000CBA9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				BC775A3F2169AF7400D05B6A /* UIDeligate.swift */,
 				DA44029A216A21A0007D27CB /* addTopicViewController.swift */,
 				DA44029C216A21F8007D27CB /* addMessageViewController.swift */,
+				BC331717216A582800A825FA /* navClassViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				BC4D1DB82168B3CE000CBA9D /* AppDelegate.swift in Sources */,
 				CA75C47B2168C09800517267 /* TopicView.swift in Sources */,
 				DA44029D216A21F8007D27CB /* addMessageViewController.swift in Sources */,
+				BC331718216A582800A825FA /* navClassViewController.swift in Sources */,
 				CA75C4832168D98F00517267 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

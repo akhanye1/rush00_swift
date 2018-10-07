@@ -26,6 +26,10 @@ class MessageViewController: UIViewController, UITableViewDelegate, UITableViewD
         
     }
     
+    func changeView(userKey: String) {
+        
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "messageCell") as! MessageTableViewCell
         /*let mssg: (String, String, String, String, String, Bool) = (messageData[indexPath.row].id, messageData[indexPath.row].message ,messageData[indexPath.row].date ,messageData[indexPath.row].author, messageData[indexPath.row].topicId, messageData[indexPath.row].reply)
