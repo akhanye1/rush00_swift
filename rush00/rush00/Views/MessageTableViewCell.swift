@@ -14,16 +14,15 @@ class MessageTableViewCell: UITableViewCell {
     @IBOutlet weak var authorLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
-
-
-    var messageD: (String, String, String, String, String, Bool)? {
-        didSet{
-            if let dn = messageD{
-                authorLabel?.text = dn.3
-                dateLabel?.text = dn.2
-                messageLabel?.text = dn.1
-                }
-
-            }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        
+        // Configure the view for the selected state
     }
 }

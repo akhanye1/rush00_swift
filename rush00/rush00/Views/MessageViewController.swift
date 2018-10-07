@@ -8,24 +8,36 @@
 
 import UIKit
 
-class MessageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MessageViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UIDeligate {
+    
     @IBOutlet weak var tableView: UITableView!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return messageData.count
     }
     
+    func updateMessages(messages: [Message]) {
+        messageData = messages
+        tableView.reloadData()
+    }
+    
+    func updateTopics(topics: [Topic]) {
+        
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "messageCell") as! MessageTableViewCell
-        let mssg: (String, String, String, String, String, Bool) = (messageData[indexPath.row].id, messageData[indexPath.row].message ,messageData[indexPath.row].date ,messageData[indexPath.row].author, messageData[indexPath.row].topicId, messageData[indexPath.row].reply)
+        /*let mssg: (String, String, String, String, String, Bool) = (messageData[indexPath.row].id, messageData[indexPath.row].message ,messageData[indexPath.row].date ,messageData[indexPath.row].author, messageData[indexPath.row].topicId, messageData[indexPath.row].reply)
         cell.messageD = mssg
-//        cell.messageD = messageData[indexPath.row]
+//        cell.messageD = messageData[indexPath.row]*/
+        cell.authorLabel?.text = messageData[indexPath.row].author
+        cell.messageLabel?.text = messageData[indexPath.row].message
+        cell.dateLabel?.text = messageData[indexPath.row].date
         return cell
     }
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        getMessages(deligateType: self)
         // Do any additional setup after loading the view.
     }
 

@@ -13,5 +13,5 @@ for message in messageData {
 
 print("\nConnecting to 42")
 
-getMessages()
+getTopics()
 //getTokenKey()

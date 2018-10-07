@@ -8,15 +8,25 @@
 
 import UIKit
 
-class TopicView: UIViewController,UITableViewDataSource,UITableViewDelegate{
+class TopicView: UIViewController,UITableViewDataSource,UITableViewDelegate, UIDeligate {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var logout: UIBarButtonItem!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        getTopics(deligateType: self)
         // Do any additional setup after loading the view.
+    }
+    
+    func updateMessages(messages: [Message]) {
+        /*messageData = messages
+        tableView.reloadData()*/
+    }
+    
+    func updateTopics(topics: [Topic]) {
+        topicData = topics
+        tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,7 +44,6 @@ class TopicView: UIViewController,UITableViewDataSource,UITableViewDelegate{
         cell.detailTextLabel?.text = topicData[indexPath.row].date
         cell.detailTextLabel?.text = topicData[indexPath.row].author
         cell.detailTextLabel?.text = topicData[indexPath.row].id
-        print("Text : \(topicData[indexPath.row].topic)")
         return cell
     }
     

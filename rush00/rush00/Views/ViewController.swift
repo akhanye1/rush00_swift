@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController{
+class ViewController: UIViewController {
     
     @IBOutlet weak var Username: UILabel!
     @IBOutlet weak var Password: UILabel!
@@ -18,7 +18,7 @@ class ViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        connectTo42()
+        //connectTo42()
         // Do any additional setup after loading the view, typically from a nib.
     }
 

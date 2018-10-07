@@ -13,6 +13,7 @@
 		BC4D1DBF2168B3D1000CBA9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC4D1DBE2168B3D1000CBA9D /* Assets.xcassets */; };
 		BC4D1DC22168B3D1000CBA9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC4D1DC02168B3D1000CBA9D /* LaunchScreen.storyboard */; };
 		BC4D1DCD2168C3D7000CBA9D /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC4D1DCC2168C3D7000CBA9D /* Connection.swift */; };
+		BC775A402169AF7400D05B6A /* UIDeligate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC775A3F2169AF7400D05B6A /* UIDeligate.swift */; };
 		CA75C47B2168C09800517267 /* TopicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75C47A2168C09800517267 /* TopicView.swift */; };
 		CA75C47E2168D8EA00517267 /* TopicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA75C47C2168D8EA00517267 /* TopicCell.swift */; };
 		CA75C47F2168D8EA00517267 /* TopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA75C47D2168D8EA00517267 /* TopicCell.xib */; };
@@ -33,6 +34,7 @@
 		BC4D1DC12168B3D1000CBA9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC4D1DC32168B3D1000CBA9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC4D1DCC2168C3D7000CBA9D /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		BC775A3F2169AF7400D05B6A /* UIDeligate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDeligate.swift; sourceTree = "<group>"; };
 		CA75C47A2168C09800517267 /* TopicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicView.swift; sourceTree = "<group>"; };
 		CA75C47C2168D8EA00517267 /* TopicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCell.swift; sourceTree = "<group>"; };
 		CA75C47D2168D8EA00517267 /* TopicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopicCell.xib; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				CA75C47A2168C09800517267 /* TopicView.swift */,
 				DAA8F665216942CD003D0B48 /* MessageTableViewCell.swift */,
 				DA191346216984CD00F6256B /* MessageViewController.swift */,
+				BC775A3F2169AF7400D05B6A /* UIDeligate.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 				CA75C47E2168D8EA00517267 /* TopicCell.swift in Sources */,
 				BC4D1DCD2168C3D7000CBA9D /* Connection.swift in Sources */,
 				DAA8F666216942CD003D0B48 /* MessageTableViewCell.swift in Sources */,
+				BC775A402169AF7400D05B6A /* UIDeligate.swift in Sources */,
 				CA75C4862168D9B200517267 /* MessageController.swift in Sources */,
 				CA75C4872168D9B200517267 /* TopicController.swift in Sources */,
 				CA75C4822168D98F00517267 /* Topics.swift in Sources */,
