@@ -12,6 +12,7 @@ weak var deligate: UIDeligate?
 
 var updateArray: [Message] = [Message]()
 var updateTopics: [Topic] = [Topic]()
+let tokenKey: String? = "6d09c621936fcf6f591b16bc10f80b6bb48f243e0222783bedfbfd200fa87b85"
 
 func getTopics(deligateType: UIDeligate) {
     deligate = deligateType
@@ -20,7 +21,7 @@ func getTopics(deligateType: UIDeligate) {
 
     let url = URL(string: authEndPoint)
     var request = URLRequest(url: url!)
-    request.setValue("Bearer 9e5ca8bceeea82ac19345751ed3d5123cd07a650c97b2885f952c6114a81c465", forHTTPHeaderField: "Authorization")
+    request.setValue("Bearer 6d09c621936fcf6f591b16bc10f80b6bb48f243e0222783bedfbfd200fa87b85", forHTTPHeaderField: "Authorization")
     request.httpMethod = "GET"
     let session = URLSession.shared
     let requestPost = session.dataTask(with: request) { (data, response, error) in
@@ -72,7 +73,7 @@ func getMessages(deligateType: UIDeligate) {
 
     let url = URL(string: authEndPoint)
     var request = URLRequest(url: url!)
-    request.setValue("Bearer b85ac4289801e65b5741e6d4485cc486cb27d528b0963684b6b424267be5f2bf", forHTTPHeaderField: "Authorization")
+    request.setValue("Bearer 6d09c621936fcf6f591b16bc10f80b6bb48f243e0222783bedfbfd200fa87b85", forHTTPHeaderField: "Authorization")
     request.httpMethod = "GET"
     let session = URLSession.shared
     let requestPost = session.dataTask(with: request) { (data, response, error) in
@@ -137,6 +138,7 @@ func getTokenKey() {
                 if let tempToken = dictonary
                 {
                     print(tempToken)
+                    //tokenKey = tempToken["access_token"] as! String!
                 }
                 else {
                     print("Did not work as expected")
