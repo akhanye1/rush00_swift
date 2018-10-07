@@ -14,6 +14,7 @@ class ViewController: UIViewController, UIWebViewDelegate, UIDeligate {
     static var apiKey: String?
     
     @IBOutlet var webViewLogIn: UIWebView!
+    @IBAction func unwindToWeb(_ sender: UIStoryboardSegue){}
     
     @IBAction func loginButton(_ sender: UIButton) {
         

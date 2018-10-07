@@ -113,7 +113,11 @@
                         </barButtonItem>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Topics" id="DrO-ol-9kP">
-                        <barButtonItem key="rightBarButtonItem" title="Logout" id="quJ-WK-q7k"/>
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="quJ-WK-q7k">
+                            <connections>
+                                <segue destination="kh1-wE-cpr" kind="unwind" unwindAction="unwindToWeb:" id="GAd-wO-ES9"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
@@ -122,6 +126,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rDb-YK-i3X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="kh1-wE-cpr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="949.60000000000002" y="27.436281859070466"/>
         </scene>
